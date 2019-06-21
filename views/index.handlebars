@@ -1,17 +1,25 @@
+<div class="d-flex justify-content-lg-center">
 <h1>Eat Da Burger</h1>
+</div>
+
+<div class="d-flex justify-content-lg-center">
+
 <img src="./assets/img/burger.png">
 
+</div>
+
+
 {{#each burgers}}
-<h3>{{this.burger_name}}</h3>
-<h3>{{this.devoured}}</h3>
+<h5>{{this.burger_name}}</h5>
+<h5>{{this.devoured}}</h5>
 {{/each}}
 
-
+<div class="d-flex justify-content-lg-center">
 <form class="create-form">
     <div class="form-group">
-        <label for="bu">Type of Burger</label>
+        <p>Enter a burger you want!</p>
         <input type="text" id="bu" name="burger_name">
-    </div>
-    <button type="submit">Add Burger</button>
-    <p>Enter a burger you want and click submit</p>
+    <button type="submit" class="btn btn-success">Add a Burger</button>
+ </div>
 </form>
+</div>
