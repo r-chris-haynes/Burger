@@ -20,17 +20,15 @@ $(function () {
         );
     });
 
-    $(".eat-burger").on("click", function (event) {
+    $(document).on("click", ".eat-burger", function (event) {
         event.preventDefault();
 
-        var id = $(this).data("id");
-        var devouredState = {
-            devoured: 1
-        };
+        var id = $(this).attr("data-id");
+        console.log("id: ",id);
+        
         // Send the eat request.
         $.ajax("/api/burgers/" + id, {
             type: "PUT",
-            data: devouredState
         }).then(
             function () {
                 console.log("devoured burger", id);

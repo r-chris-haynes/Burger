@@ -23,11 +23,24 @@
     {{#each burgers}}
     {{#unless devoured}}
     <h5> {{this.id}} - {{this.burger_name}} <span>
-        <button class="btn btn-success" class="change-devoured" data-id="{{id}}" data-newdevoured="{{devour}}">
-            {{#if devour}}DIGEST!{{else}}DEVOUR!{{/if}}
+        <button class="btn btn-success eat-burger"  data-id="{{id}}" data-newdevour="{{devouredState}}">
+            {{#if devour}}Digest!{{else}}Devour!{{/if}}
         </button>
     </span></h5>
     <br>
     {{/unless}}
+    {{/each}}
+</ul>
+    <hr>
+<ul>
+    {{#each burgers}}
+    {{#if devoured}}
+    <h5> {{this.id}} - {{this.burger_name}} <span>
+        <button class="btn btn-success eat-burger"  data-id="{{id}}" data-newdevour="{{devouredState}}">
+            {{#if devour}}Digest!{{else}}Devour!{{/if}}
+        </button>
+    </span></h5>
+    <br>
+    {{/if}}
     {{/each}}
 </ul>
