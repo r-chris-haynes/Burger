@@ -3,7 +3,7 @@ Eat-Da-Burger was made with MySQL, Node, Express, Handlebars and a homemade ORM.
 
 Eat-Da-Burger is a restaurant app that lets users input the names of burgers they'd like to eat.
 
-Whenever a user submits a burger's name, the app dispalys the burger on the top side of the page -- waiting to be devoured.
+Whenever a user submits a burger's name, the app dispalys the burger on the top  of the page -- waiting to be devoured.
 
 Each burger in the waiting area also has a Devour it! button. When the user clicks it, the burger will move to the bottom  of the page.
 
