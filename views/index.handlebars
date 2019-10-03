@@ -8,12 +8,14 @@
 
 </div>
 
+ <h5 class="d-flex justify-content-center">Enter a burger you want to devour!</h5>
+
 <div class="d-flex justify-content-lg-center">
     <form class="create-form">
         <div class="form-group">
             <br>
-            <h6 class="d-flex justify-content-center">Enter a burger you want to devour!</h6>
-            <input type="text" id="bu" name="burger_name">
+            {{!-- <h5 class="d-flex justify-content-center">Enter a burger you want to devour!</h5> --}}
+            <input type="text" id="bu" class="form-control-lg" name="burger_name" placeholder="Order Here!">
             <button type="submit" class="btn btn-success">Add a Burger</button>
         </div>
     </form>
@@ -27,11 +29,11 @@
             <ul>
                 {{#each burgers}}
                 {{#unless devoured}}
-                <h5> {{this.id}} - {{this.burger_name}} <span>
+                <h6> {{this.id}} - {{this.burger_name}} <span>
                         <button class="btn btn-success eat-burger" data-id="{{id}}" data-newdevour="{{devouredState}}">
                             {{#if devour}}Digest!{{else}}Devour!{{/if}}
                         </button>
-                    </span></h5>
+                    </span></h6>
                 <br>
                 {{/unless}}
                 {{/each}}
@@ -43,11 +45,11 @@
             <ul>
                 {{#each burgers}}
                 {{#if devoured}}
-                <h5> {{this.id}} - {{this.burger_name}} <span>
+                <h6> {{this.id}} - {{this.burger_name}} <span>
                         <button class="btn btn-danger del-burger" data-id="{{id}}" data-newdevour="{{devouredState}}">
                             {{#if devour}}Digest!{{else}}Delete{{/if}}
                         </button>
-                    </span></h5>
+                    </span></h6>
                 <br>
                 {{/if}}
                 {{/each}}
