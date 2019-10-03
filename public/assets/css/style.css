@@ -1,4 +1,18 @@
 body {
     background-color: rgb(205, 86, 50);
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
 }
+
+h1 {
+    font-size: 56px;
+    padding: 22px;
+	-webkit-text-stroke: 1px white;
+	
+}
+
+h6 {
+    font-size: 42px;
+    -webkit-text-stroke: .7px white; 
+}
+
