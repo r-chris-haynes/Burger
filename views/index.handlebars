@@ -6,7 +6,7 @@
     <img src="./assets/img/burger.png">
 </div>
 
-<h5 class="d-flex justify-content-center">Enter a burger you want to devour!</h5>
+<h5 id="instructions" class="d-flex justify-content-center">Enter a burger you want to devour!</h5>
 
 <div class="d-flex justify-content-lg-center">
     <form class="create-form">
@@ -20,7 +20,7 @@
 <div class="container">
     <div class="row">
         <div class="col-md-6 text-center">
-            <h5>Order Up</h5>
+            <h5 class="burgers">Order Up</h5>
             <br>
             <ul>
                 {{#each burgers}}
@@ -37,7 +37,7 @@
         </div>
 
         <div class="col-md-6 text-center">
-            <h5>Devoured</h5>
+            <h5 class="burgers">Devoured</h5>
             <br>
             <ul>
                 {{#each burgers}}
